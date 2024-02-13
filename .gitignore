@@ -4,6 +4,8 @@ api-elasticsearch/src-tauri
 iot-rest-control/node_modules
 iot-rest-control/dist
 iot-rest-control/src-tauri
+assets/*.webm
+assets/React-Query-Tauri_05.webm
 
 # Logs
 logs
