@@ -1070,5 +1070,14 @@ export const system = {
         key: {
             hwclock: '&hwclock=',
         }
+    },
+    syslog: {
+        param: {
+            get: 'getsyslog',
+            set: 'setsyslog',
+        },
+        key: {
+            log: '&log='
+        }
     }
 }

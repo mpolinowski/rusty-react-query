@@ -63,3 +63,12 @@ export interface iGetLatestVersionApiResponse {
 export interface iGetHwClockApiResponse {
     hwclock: 0 | 1
 }
+
+export interface iGetServerLogApiResponse {
+    log: string
+}
+
+export interface iGetServerTimeApiResponse {
+    timezone: string
+    time: number
+}
