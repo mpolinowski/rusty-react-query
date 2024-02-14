@@ -4,11 +4,8 @@ import { useQuery } from "@tanstack/react-query"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
 import { ReloadIcon } from "@radix-ui/react-icons"
 
-// import { iGetServerLogApiResponse } from '@/types/iSystem'
 import { login, system } from '@/config.ts'
 
 const cmd='http://'+login.url+':'+login.port+'/param.cgi?cmd='
@@ -26,16 +23,8 @@ const fetchCameraState = async(param: string,): Promise<string> => {
         .replace('response="200";', '')
         .replace('log="', '')
         .replace('";', '' )
-        // .replace(cmdQuery, '{"')
-        // .replace('response="200";', '}')
-        // .replace(/=/g, '":')
-        // .replace(/";/g, '","')
-        // .replace(/\s/g, '')
-        // .replace(/","}/g, '"}')
         console.log(cleanedTextResponse)
-
-        // const jsonData: iGetServerLogApiResponse = JSON.parse(cleanedTextResponse)
-        // console.log(jsonData)
+        
         return cleanedTextResponse
     }
     throw new Error('ERROR :: Data fetching failed!')
@@ -75,10 +64,6 @@ export function SysLog(): React.JSX.Element {
     return (
             <>
                 <div className="flex gap-2 mb-3">
-                    {/* <Label htmlFor="name" className="text-left min-w-40">
-                        System Log
-                    </Label>
-                    <Textarea placeholder={response} /> */}
                     <ScrollArea className="whitespace-pre text-left h-[300px] w-full rounded-md border mt-4 p-4">
                         <h3>Event log:</h3>
                         {response}
