@@ -42,7 +42,7 @@ const fetchData = async(param: string, position: string): Promise<iPostApiRespon
     throw new Error('ERROR :: Data fetching failed!')
 }
 
-export default function GoTo(): React.JSX.Element {
+export function GoTo(): React.JSX.Element {
 
     const [position, setPosition] = useState('')
 

@@ -5,6 +5,11 @@ export interface iLogin {
     password: string
 }
 
+export interface iMove {
+    direction: 'right' | 'left' | 'up' | 'down'
+    distance: string
+}
+
 export interface iPostRequest {
     value: string
     body?: string
