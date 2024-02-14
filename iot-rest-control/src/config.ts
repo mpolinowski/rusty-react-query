@@ -897,11 +897,58 @@ export const smarthome = {
 }
 
 export const recording = {
-    mailtimersnap: 'getmatimersnap',
-    ftpsnaptimerattr: 'getsnaptimerftpattr',
-    planrecattr: 'getplanrecattr',
-    manualrecattr: 'getmanualrecattr',
-    recordstatus: 'getrecordstatus',
+    mailtimersnap: {
+        param: {
+            get: 'getmatimersnap',
+            set: 'setmatimersnap',
+        },
+        key: {
+            enable: '&enable=',
+            interval: '&interval='
+        }
+    },
+    ftpsnaptimerattr: {
+        param: {
+            get: 'getsnaptimerftpattr',
+            set: 'setsnaptimerftpattr',
+        },
+        key: {
+            mode: '&mode=',
+            prefix: '&prefix=',
+            name: '&name='
+        }
+    },
+    planrecattr: {
+        param: {
+            get: 'getplanrecattr',
+            set: 'setplanrecattr',
+        },
+        key: {
+            enable: '&enable=',
+            chn: '&chn=',
+            duration: '&duration='
+        }
+    },
+    manualrecattr: {
+        param: {
+            get: 'getmanualrecattr',
+            set: 'setmanualrecattr',
+        },
+        key: {
+            time: '&time=',
+            resolution: '&resolution=',
+            pre: '&pre='
+        }
+    },
+    recordstatus: {
+        param: {
+            get: 'getrecordstatus',
+            set: 'setrecordstatus',
+        },
+        key: {
+            recstatus: '&recstatus='
+        }
+    },
 }
 
 export const system = {

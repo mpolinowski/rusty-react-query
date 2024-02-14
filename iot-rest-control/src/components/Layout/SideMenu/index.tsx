@@ -27,6 +27,9 @@ import ImageMenu from '@/components/API/Multimedia/Image'
 import OverlayMenu from '@/components/API/Multimedia/Overlay'
 import PrivacyMenu from '@/components/API/Multimedia/Privacy'
 
+import ImageRecMenu from '@/components/API/Recording/Images'
+import VideoRecMenu from '@/components/API/Recording/Video'
+
 import MailMenu from '@/components/API/Features/Mail'
 import FTPMenu from '@/components/API/Features/FTP'
 import LightMenu from '@/components/API/Features/Light'
@@ -80,6 +83,13 @@ export function SideMenu(): JSX.Element {
               <ImageMenu />
               <OverlayMenu />
               <PrivacyMenu />
+            </CollapsibleContent>
+        </Collapsible>
+        <Collapsible>
+            <CollapsibleTrigger className='p-2 text-xl text-muted-foreground'>Recording</CollapsibleTrigger>
+            <CollapsibleContent className="flex flex-col">
+              <ImageRecMenu />
+              <VideoRecMenu />
             </CollapsibleContent>
         </Collapsible>
         <Collapsible>
