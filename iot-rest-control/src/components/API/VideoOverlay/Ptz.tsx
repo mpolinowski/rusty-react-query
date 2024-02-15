@@ -46,14 +46,14 @@ export const PanTilt = (props: iMove): React.JSX.Element => {
     } catch (error: unknown) {
         if (error instanceof Error) {
             setFetcherr(error.message)
-            // console.log(fetcherr)
+            console.log(fetcherr)
           }
     } finally {
       setIsLoading(false)
     }
   }
 
-  // console.log(status)
+  console.log(status)
 
   return (
     <>
