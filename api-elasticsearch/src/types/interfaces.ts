@@ -3,7 +3,7 @@ export interface iHelloWorld {
 }
 
 export interface iElasticApiSearchUrl {
-    url: 'https://search.instar.wiki/cgi_interface/_search?q=' | 'https://search.instar.wiki/fw_changelog/_search?q='
+    url: 'https://my.elastic.search/cgi_interface/_search?q=' | 'https://my.elastic.search/fw_changelog/_search?q='
 }
 
 interface iElasticSearchShards {
